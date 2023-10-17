@@ -1,0 +1,167 @@
+/* ESTILOS GENERALES*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    background-color:aqua;
+    width: 90%;
+    max-width:  1000px;
+    
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+}
+body{
+    font-family: sans-serif;
+    font-size: 1rem;
+
+    display: flex;
+    align-items: center;
+    height:100vh ;
+}
+    /**inicio encabezado**/
+header{
+    width: 100%;
+    background-color: #909;
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    
+   
+}
+
+
+    header #logo{
+        width: 90px;
+        height: 90px;
+        background-color: rgb(245, 245, 245);
+        border-radius: 10px ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0.5rem  }
+        #logo:hover {
+            background-color: coral;
+        }
+        #logo:active{
+            background-color: darkblue;
+        }
+           header nav{ 
+        width: 50%;
+        height: 80px;
+        background-color: cornflowerblue;
+        border-radius: 10px ;
+        line-height: 3rem;
+        margin: 0.5rem;
+        padding: 1rem;
+    }
+    /**fin encabezado*/
+    /**comienzo menu principal*/
+    main{
+        background-color: purple;
+        margin: 0.5rem;
+        padding: 1rem;
+        border-radius: 10px;
+        width: 60%;
+
+    }
+    main section{
+        background-color: rgb(182, 32, 182);
+        margin: 0.5rem;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+    main section article{
+        background-color: rgb(248, 46, 248);
+        margin: 0.5rem;
+        padding: 1rem;
+        border-radius: 10px;
+        width: 100%;
+    }
+    main section article:hover{
+    background-color: coral;}
+
+    main section article :active{
+    background-color: darkblue;}
+
+    /*fin menu principal*/
+    /*inicio barra lateral*/
+    aside{
+        background-color: yellow;
+        margin: 0.5rem;
+        padding: 1rem;
+        border-radius: 10px;
+       display: flex;
+    
+
+       /*propiedad flexbox*/
+       flex-direction: column;
+       flex-wrap: wrap;
+       width: 26%;
+       line-height: 5rem;
+    }
+    aside  .pertem{
+        background-color: orange; 
+        margin: 0.5rem;
+        height: 90px;
+        border-radius: 10px;
+        
+    }
+    /*inicion seccion pie de pagina foter*/
+    footer{
+        width: 100%;
+        background-color: olive;
+        margin: o.5rem;
+        line-height: 4rem;
+        border-radius: 10px;
+        /**flexbox centrar*/
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    header #logo {
+        width: 60px;
+        height: 60px;
+        margin: 5px 0;
+    }
+    
+    header nav{
+        width: 90%;
+        line-height: 1,2rem;
+        margin: 0,5rem;
+        padding: 1rem;
+        display: flex;
+
+    }
+    @media (max-width: 700px) {
+        body{
+            font-size: 0.7rem;
+        }
+
+    .contenedor{
+        flex-direction: column;
+    }
+
+    aside {
+        text-align: center;
+    }
+    footer{
+        justify-content: space-around;
+    }
+    }
